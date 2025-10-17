@@ -170,7 +170,41 @@ Example: “John Wick” → “J.W.”
 
 Testcases: getInitials("John Wick") ➞ "J.W." */
 
-function getInitials(fullName){
-    let str = fullName.split(" ")
-    
+// function getInitials(fullName){
+//     let newStr = fullName.split(" ");
+//     let In = "";
+
+//     for(let i = 0; i < newStr.length; i++){
+//         if(newStr[i].length > 0){
+//             In = In + newStr[i][0].toUpperCase() + ".";
+//         }
+//     }
+//     return In
+// }
+
+// console.log(getInitials("Sami Ahmed"));
+
+
+
+/* Q10: Write a function hideVowels(str) that replaces all vowels (both lowercase and uppercase)
+with *.
+
+Testcases: hideVowels("Hello World") ➞ "H*ll* W*rld" */
+
+function hideVowels(str){
+    let newStr = str.split("");
+    let vow = ["a", "e", "i", "o", "u"];
+    // let hide = ""
+
+    for(let i = 0; i < newStr.length; i++){
+        for(j=0; j < vow.length; j++){
+        if(newStr[i] == vow[j]){
+            newStr[i] = "*";
+        }
+    }
 }
+    let returnStr = newStr.join("");
+    console.log(returnStr)
+}
+
+hideVowels("Hello World");
