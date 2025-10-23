@@ -22,20 +22,20 @@ Testcases: maskEmail("johnwick@gmail.com") ➞ "j****k@gmail.com" */
 
 Testcases: reverseString("hello") ➞ "olleh" */
 
-// function reverseString(str){
-//     let newStr = str.split("");
+function reverseString(str){
+    let newStr = str.split("");
 
-//     for(let i = 0; i < newStr.length/2; i++){
-//         let a = newStr[i];
-//         let b = newStr[newStr.length-i-1];
-//         newStr[i] = b;
-//         newStr[newStr.length-i-1] = a;
-//     }
-//     let Str = newStr.join("")
-//     console.log(Str)
-// }
+    for(let i = 0; i < newStr.length/2; i++){
+        let a = newStr[i];
+        let b = newStr[newStr.length-i-1];
+        newStr[i] = b;
+        newStr[newStr.length-i-1] = a;
+    }
+    let Str = newStr.join("")
+    console.log(Str)
+}
 
-// reverseString("hello");
+reverseString("hello i am sami");
 
 
 
