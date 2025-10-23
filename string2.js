@@ -30,7 +30,7 @@ Testcases: "Race car" ➝ true ,  "Hello" ➝ false ,   "Madam" ➝ true  */
 
 
 
-/* Q1: Write a function that counts the number of vowels and consonants in a string. Return the
+/* Q2: Write a function that counts the number of vowels and consonants in a string. Return the
 result as "Vowels: x, Consonants: y".
 
 Testcases: "OpenAI" ➝ "Vowels: 4, Consonants: 2"  */
@@ -136,8 +136,20 @@ Testcases: "programming" ➝ "progamin"  */
 
 // function duplicate(str){
 //     let newStr = str.split("");
+//     let seen = []
+//     let result = ""
+    
+//     for (let i = 0; i < newStr.length; i++) {
+//         if(!seen.includes(newStr[i])){
+//             seen+=newStr[i];
+//             result += newStr[i];
+//         }
+//     }
+//     return result
     
 // }
+
+// console.log(duplicate("programming"))
 
 
 
@@ -166,16 +178,23 @@ Testcases: "Hello World from ChatGPT" ➝ ["Hello","World","ChatGPT"]  */
 
 Testcases: "Hello World" ➝ "olleH dlroW"  */
 
-function reverse(str){
-    let newStr = str.split(" ");
-    let word = newStr[0].split("");
-    
-    console.log(newStr);
-    console.log(word);
+// function reverse(str){
+//     let newStr = str.split(" ");
+//     let revStr = ""
 
-}
+//     for (let i = 0; i < newStr.length; i++) {
+//         let word = newStr[i];
+//         let revword = ""
 
-reverse ("Hello World");
+//         for (let j = word.length-1; j >= 0; j--) {
+//             revword += word[j]
+//         }
+//         revStr += revword + " " 
+//     }
+//     console.log(revStr)
+// }
+
+// reverse("Hello World");
 
 
 
@@ -186,6 +205,10 @@ Testcases: "hello" ➝ {h:1, e:1, l:2, o:1}  */
 function frequency(str){
     let newStr = str.split("");
     
+    for (const i in newStr) {
+        if (!newStr.hasOwn(newStr, i)) continue;
+        
+    }
 }
 
 /* Q10: Write a function that truncates a string if it exceeds a given length and adds "..." at the end.
