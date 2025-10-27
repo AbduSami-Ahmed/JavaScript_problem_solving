@@ -68,17 +68,18 @@ Testcases: "I have 2 apples and 5 bananas" → [2, 5] */
 //     console.log(result)
 // }
 
+
 // Return("I have 2 apples and 5 bananas")
 
-function extract(str) {
-  let matches = str.match(/\d+/g);
+// function extract(str) {
+//   let matches = str.match(/\d+/g);
  
-  if (!matches) return [];
+//   if (!matches) return [];
 
-  return matches.map(Number);
-}
+//   return matches.map(Number);
+// }
 
-console.log(extract("I have 2 apples and 5 bananas"))
+// console.log(extract("I have 2 apples and 5 bananas"))
 
 
 
@@ -89,10 +90,11 @@ console.log(extract("I have 2 apples and 5 bananas"))
 Testcases: "<p>Hello</p>" → "Hello" */
 
 // function remove(str){
-//     let 
+//     let result = str.replace(/<[^>]*>/g, '')
+//     console.log(result)
 // }
 
-// remove("<p>Hello</p>")
+// remove("<div><b>Bold</b> Text</div>")
 
 
 
@@ -103,6 +105,55 @@ one.
 
 Testcases: "mississippi" → "i" */
 
-function same(str){
+// function same(str){
+//   let newStr = str.split("");
 
-}
+//   for (let i = 0; i < newStr.length; i++) {
+//     let char = newStr[i];
+
+//     if (newStr.indexOf(char) != newStr.lastIndexOf(char)) {
+//       return str[i]
+//     }
+//   }
+//   return null
+// }
+
+// console.log(same("mississippi"));
+
+
+
+
+
+/*Q6: Given two strings, determine if one is a rotation of the other. For example, "erbottlewat" is a rotation of "waterbottle".
+
+Testcases: "waterbottle", "erbottlewat" → true */
+
+// function rotate(str, str1){
+//   let newStr = str.split("");
+//   let newStr1 = str1.split("");
+//   let isTrue = true;
+
+//   for (let i = 0; i < newStr.length; i++) {
+//     let match = false
+//     for (let j = 0; j < newStr1.length; j++) {
+//       if (newStr[i] == newStr1[j]) {
+//         match = true
+//       }
+//     }
+//     if (!match) {
+//       isTrue = false
+//     }
+//   }
+//   return isTrue
+// }
+
+// console.log(rotate("waterbottle", "erbottlewat"))
+
+
+
+
+
+/*Q7: Find the character that occurs most frequently in the given string (ignore case). If more than one character has the same highest frequency, return the alphabetically first
+one.
+
+Testcases: "mississippi" → "i" */
