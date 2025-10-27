@@ -105,26 +105,26 @@ order). Ignore case and spaces.
 
 Testcases: "listen", "silent" ➝ true */
 
-// function anagrams(str, word){
-//     let newStr = str.split("");
-//     let newWord = word.split("");
-//     let isTrue = true
+function anagrams(str, word){
+    let newStr = str.split("");
+    let newWord = word.split("");
+    let isTrue = true
 
-//     for(let i = 0; i < newStr.length; i++){
-//         let match = false
-//         for(let j = 0; j < newWord.length; j++){
-//             if(newStr[i]==newWord[j]){
-//                 match = true
-//             }
-//         }
-//         if(!match){
-//             isTrue = false
-//         }
-//     }
-//     return(isTrue)
+    for(let i = 0; i < newStr.length; i++){
+        let match = false
+        for(let j = 0; j < newWord.length; j++){
+            if(newStr[i]==newWord[j]){
+                match = true
+            }
+        }
+        if(!match){
+            isTrue = false
+        }
+    }
+    return(isTrue)
     
-// }
-// console.log(anagrams("listen", "silent"));
+}
+console.log(anagrams("listen", "silent"));
 
 
 
