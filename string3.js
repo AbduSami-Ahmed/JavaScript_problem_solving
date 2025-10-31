@@ -128,26 +128,26 @@ Testcases: "mississippi" → "i" */
 
 Testcases: "waterbottle", "erbottlewat" → true */
 
-// function rotate(str, str1){
-//   let newStr = str.split("");
-//   let newStr1 = str1.split("");
-//   let isTrue = true;
+function rotate(str, str1){
+  let newStr = str.split("");
+  let newStr1 = str1.split("");
+  let isTrue = true;
 
-//   for (let i = 0; i < newStr.length; i++) {
-//     let match = false
-//     for (let j = 0; j < newStr1.length; j++) {
-//       if (newStr[i] == newStr1[j]) {
-//         match = true
-//       }
-//     }
-//     if (!match) {
-//       isTrue = false
-//     }
-//   }
-//   return isTrue
-// }
+  for (let i = 0; i < newStr.length; i++) {
+    let match = false
+    for (let j = 0; j < newStr1.length; j++) {
+      if (newStr[i] == newStr1[j]) {
+        match = true
+      }
+    }
+    if (!match) {
+      isTrue = false
+    }
+  }
+  return isTrue
+}
 
-// console.log(rotate("waterbottle", "erbottlewat"))
+console.log(rotate("waterbottle", "erbottlewat"))
 
 
 
