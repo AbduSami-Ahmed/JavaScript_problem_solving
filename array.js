@@ -163,7 +163,7 @@ Testcase 1: [1, 1, 2, 3, 3] → [1, 2, 3] */
 
 
 
-/*Q1: Return the index of a given element in the array. If it doesn’t exist, return -1.
+/*Q9: Return the index of a given element in the array. If it doesn’t exist, return -1.
 Testcase 1: ([1, 2, 3], 2) → 1 */
 
 // function search(arr, a){
@@ -182,9 +182,50 @@ Testcase 1: ([1, 2, 3], 2) → 1 */
 
 
 
-/*Q1: Find the second highest number in the array.
+/*Q10: Find the second highest number in the array.
 Testcase 1: [1, 5, 3, 9, 7] → 7 */
 
 function seclargest(arr){
     
 }
+
+
+
+
+
+/*Q11: Return a new array with each element squared.
+Testcase 1: [1, 2, 3] → [1, 4, 9] */
+
+// function square(arr){
+//     let newArr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(arr[i]**2)
+//     }
+//     console.log(newArr)
+// }
+
+// square([1, 2, 3, 4, 5])
+
+
+
+
+
+/* Q12: Determine if the array is sorted in ascending order.
+Testcase 1: [1, 2, 3, 4] → true */
+
+// function sort(arr){
+//     let istrue = true
+//     for (let i = 0; i < arr.length-1; i++) {
+//         if(arr[i] > arr[i+1]){
+//             istrue = false
+//         }
+//     }
+//     console.log(istrue)
+// }
+
+// sort([1, 2, 3, 4])
+
+
+
+
+
