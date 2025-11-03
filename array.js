@@ -185,9 +185,23 @@ Testcase 1: ([1, 2, 3], 2) → 1 */
 /*Q10: Find the second highest number in the array.
 Testcase 1: [1, 5, 3, 9, 7] → 7 */
 
-function seclargest(arr){
-    
-}
+// function seclargest(arr){
+//     let large = arr[0]
+//     let seclarge = 0
+
+//     for (let i = 0; i < arr.length; i++) {
+//        if(arr[i] > large){
+//         seclarge = large
+//         large = arr[i]
+//        }
+//        else if (arr[i]<large && arr[i]>seclarge) {
+//         seclarge = arr[i]
+//        }
+//     }
+//     console.log(seclarge)
+// }
+
+// seclargest([1, 5, 3, 9, 7])
 
 
 
@@ -229,3 +243,56 @@ Testcase 1: [1, 2, 3, 4] → true */
 
 
 
+/* Q13: Rotate the elements of an array to the right by one position.
+Testcase 1: [1, 2, 3, 4] → [4, 1, 2, 3] */
+
+// function rotate(arr){
+//     let newArr = []
+//     let last = arr[arr.length-1]
+//     newArr.push(last)
+
+//     for (let i = 0; i < arr.length-1; i++) {
+//         newArr.push(arr[i])
+//     }
+//     console.log(newArr)
+// }
+
+// rotate([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+
+
+
+
+/* Q14: Find and return the common elements between two arrays.
+Testcase 1: ([1, 2, 3], [2, 3, 4]) → [2, 3] */
+
+// function common(arr, arr1){
+//     let newArr = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr1.length; j++) {
+//             if(arr[i] == arr1[j]){
+//                 newArr.push(arr[i])
+//             }
+//         }
+//     }
+//     console.log(newArr)
+// }
+
+// common([1, 2, 3], [2, 3, 4])
+
+
+
+
+
+/* Q15: Remove an element from the array at a given index.
+Testcase 1: ([1, 2, 3, 4], 2) → [1, 2, 4] */
+
+// function remove(arr, a){
+//     let newArr = []
+
+//     arr.splice(arr[a-1], 1)
+//     console.log(arr)
+// }
+
+// remove([1, 2, 3, 4], 2)
