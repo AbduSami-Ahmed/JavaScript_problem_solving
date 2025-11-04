@@ -42,10 +42,86 @@ Testcase 1: ([1, 2, 4, 7], 6) → true */
 /*Q3: Move all zeros in the array to the end while maintaining the order of other elements.
 Testcase 1: [0, 1, 0, 3, 12] → [1, 3, 12, 0, 0] */
 
-function move(arr){
+// function move(arr){
+//     let nonZero = arr.filter(num => num !== 0)
+//     let zeros = arr.length - nonZero.length;
+
+//     for (let i = 0; i < zeros; i++) {
+//         nonZero.push(0);
+//     }
+//     console.log(nonZero)
+// }
+
+// move([0, 1, 0, 3, 12])
+
+
+
+
+
+/*Q4: Return the intersection of two arrays without repeating elements.
+Testcase 1: ([1, 2, 2, 3], [2, 3, 4]) → [2, 3] */
+
+// function repeat(arr, arr1){
+//     let newArr = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr1.length; j++) {
+//             if(arr[i] == arr1[j] && !newArr.includes(arr[i])){
+//                 newArr.push(arr1[j])
+//             }
+//         }
+//     }
+//     console.log(newArr)
+// }
+
+// repeat([1, 2, 2, 3], [2, 3, 4])
+
+
+
+
+
+//********************************************************************************************************************************************
+ /*Q5: Find the length of the longest consecutive number sequence in an array.
+Testcase 1: [100, 4, 200, 1, 3, 2] → 4 */
+
+// function seqCount(arr){
+//     let count = 0
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//                 if(arr[i] == arr[j]+1){
+//                     count++
+//             }
+//         }
+//     }
+//     console.log(count)
+// }
+
+// seqCount([100, 4, 200, 1, 3, 2])
+
+
+
+
+//******************************************************************************************************************************************* */
+/*Q6: Convert a multi-dimensional array into a one-dimensional array.
+Testcase 1: [1, [2, 3], [4, [5]]] → [1, 2, 3, 4, 5] */
+
+// function convert1d(arr){
+//     let newArr = [];
+    
+// }
+
+
+
+
+
+/*Q7: Split the array into groups of given size.
+Testcase 1: ([1, 2, 3, 4, 5], 2) → [[1, 2], [3, 4], [5]] */
+
+function group(arr, a){
+    let newArr = []
+
     for (let i = 0; i < arr.length; i++) {
-        let nonZero = arr.filter(arr[i] => arr[i] !== 0)
+        
     }
 }
-
-move([0, 1, 0, 3, 12])
