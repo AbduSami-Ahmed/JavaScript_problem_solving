@@ -114,12 +114,89 @@ Testcase 1: [1, [2, 3], [4, [5]]] → [1, 2, 3, 4, 5] */
 
 
 
-
+//******************************************************************************************************************************************* */
 /*Q7: Split the array into groups of given size.
 Testcase 1: ([1, 2, 3, 4, 5], 2) → [[1, 2], [3, 4], [5]] */
 
-function group(arr, a){
-    let newArr = []
+// function group(arr, a){
+//     let newArr = []
+
+//     for (let i = 0; i < arr.length; i++) {
+        
+//     }
+// }
+
+
+
+
+
+/*Q8: Rotate the array to the right by k positions.
+Testcase 1: ([1, 2, 3, 4, 5], 2) → [4, 5, 1, 2, 3] */
+
+// function rotate(arr, a){
+//     let newArr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(arr[(i - a + arr.length) % arr.length])
+//     }
+//     console.log(newArr)
+// }
+
+// rotate([1, 2, 3, 4, 5], 2)
+
+
+
+
+
+/*Q9: Find the element that appears more than n/2 times in the array.
+Testcase 1: [3, 3, 4, 2, 3, 3, 5] → 3 */
+
+// function appear(arr){
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let count = 0;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[i] == arr[j]) {
+//                 count++
+//             }
+//         }
+//         if(count > (arr.length/2)){
+//             console.log(arr[i])
+//             return
+//         }
+//     }
+//     console.log("null")
+// }
+
+// appear([3, 3, 3, 4, 3, 2, 5]);
+
+
+
+
+
+/*Q10: Return the kth largest element in the array.
+Testcase 1: ([3, 2, 1, 5, 6, 4], 2) → 5 */
+
+// function kLargest(arr, p){
+//     let newArr = []
+//     arr.sort((a,b) => b - a)
+//     console.log(arr)
+
+//     newArr = arr[0 + (p-1)]
+//     console.log(newArr)
+// }
+
+// kLargest([10, 20, 30, 40], 2)
+
+
+
+
+
+/*Q11: Rearrange the array such that positive and negative numbers appear alternately.
+Testcase 1: [1, -2, 3, -4, 5] → [1, -2, 3, -4, 5]
+Testcase 2: [-1, -2, -3, 4, 5, 6] → [4, -1, 5, -2, 6, -3] */
+
+function posNeg(arr){
+    let newArr = [];
 
     for (let i = 0; i < arr.length; i++) {
         
