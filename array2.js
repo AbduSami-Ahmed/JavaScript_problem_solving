@@ -195,10 +195,65 @@ Testcase 1: ([3, 2, 1, 5, 6, 4], 2) → 5 */
 Testcase 1: [1, -2, 3, -4, 5] → [1, -2, 3, -4, 5]
 Testcase 2: [-1, -2, -3, 4, 5, 6] → [4, -1, 5, -2, 6, -3] */
 
-function posNeg(arr){
-    let newArr = [];
+// function posNeg(arr){
+//     let newArr = [];
+//     let pos = []
+//     let neg = []
 
-    for (let i = 0; i < arr.length; i++) {
-        
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= 0) {
+//             pos.push(arr[i])
+//         }
+//         else{
+//             neg.push(arr[i])
+//         }
+//     }
+//     console.log(pos)
+//     console.log(neg)
+
+//     let len = Math.min(pos.length, neg.length)
+//     for (let j = 0; j < len; j++) {
+//         newArr.push(pos[j], neg[j])
+//     }
+//     console.log(newArr)
+// }
+
+// posNeg([-1, -2, -3, 4, 5, 6])
+
+
+
+
+
+/*Q12: Find the continuous subarray whose elements sum up to a target value.
+Testcase 1: ([1, 2, 3, 7, 5], 12) → [2, 3, 7] */
+
+// function sumArray(arr, target){
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let sum = 0;
+//         let newArr = [];
+
+//         for (let j = i; j < arr.length; j++) {
+//             sum += arr[j]
+//             newArr.push(arr[j])
+
+//             if (sum == target) {
+//                 console.log(newArr)
+//                 return;
+//             }
+//         }
+//     }
+// }
+
+// sumArray([1, 2, 3, 7, 5], 12)
+
+
+
+
+
+/*Q12: Find all unique triplets in the array that sum up to zero.
+Testcase 1: [-1, 0, 1, 2, -1, -4] → [[-1, -1, 2], [-1, 0, 1]] */
+
+function tripZero(arr){
+    
 }
