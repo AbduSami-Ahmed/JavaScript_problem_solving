@@ -251,9 +251,54 @@ Testcase 1: ([1, 2, 3, 7, 5], 12) → [2, 3, 7] */
 
 
 
-/*Q12: Find all unique triplets in the array that sum up to zero.
+/*Q13: Find all unique triplets in the array that sum up to zero.
 Testcase 1: [-1, 0, 1, 2, -1, -4] → [[-1, -1, 2], [-1, 0, 1]] */
 
-function tripZero(arr){
+// function tripZero(arr){
     
-}
+//     for (let i = 0; i < arr.length; i++) {
+//         let newArr = []
+//         let sum = 0
+
+//         for (let j = i; j < arr.length; j++) {
+//             sum = sum + arr[j];
+//             newArr.push(arr[j])
+
+//             if (sum == 0) {
+//                 console.log(newArr)
+//             }
+//         }
+//     }
+// }
+
+// tripZero([-1, 0, 1, 2, -1, -4])
+
+
+
+
+//******************************************************************************************************************************************* */
+/*Q14: Return all elements of a 2D array in spiral order.
+Testcase 1: [[1, 2, 3], [4, 5, 6], [7, 8, 9]] → [1, 2, 3, 6, 9, 8, 7, 4, 5] */
+
+// function array2d(arr, arr1, arr2){
+//     let newArr = []
+
+//     for (let i = 0; i < arr.length; i++) {
+        
+//     }
+// }
+
+
+
+
+//******************************************************************************************************************************************* */
+/*Q15: Return an array where each element is the product of all elements except itself.
+Testcase 1: [1, 2, 3, 4] → [24, 12, 8, 6] */
+
+// function product(arr){
+//     let newArr = []
+
+//     for (let i = 0; i < arr.length; i++) {
+
+//     }
+// }
