@@ -61,20 +61,20 @@ Testcase 1: [0, 1, 0, 3, 12] → [1, 3, 12, 0, 0] */
 /*Q4: Return the intersection of two arrays without repeating elements.
 Testcase 1: ([1, 2, 2, 3], [2, 3, 4]) → [2, 3] */
 
-// function repeat(arr, arr1){
-//     let newArr = []
+function repeat(arr, arr1){
+    let newArr = []
 
-//     for (let i = 0; i < arr.length; i++) {
-//         for (let j = 0; j < arr1.length; j++) {
-//             if(arr[i] == arr1[j] && !newArr.includes(arr[i])){
-//                 newArr.push(arr1[j])
-//             }
-//         }
-//     }
-//     console.log(newArr)
-// }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr1.length; j++) {
+            if(arr[i] == arr1[j] && !newArr.includes(arr[i])){
+                newArr.push(arr1[j])
+            }
+        }
+    }
+    console.log(newArr)
+}
 
-// repeat([1, 2, 2, 3], [2, 3, 4])
+repeat([1, 2, 2, 3], [2, 3, 4])
 
 
 
@@ -133,15 +133,15 @@ Testcase 1: ([1, 2, 3, 4, 5], 2) → [[1, 2], [3, 4], [5]] */
 /*Q8: Rotate the array to the right by k positions.
 Testcase 1: ([1, 2, 3, 4, 5], 2) → [4, 5, 1, 2, 3] */
 
-// function rotate(arr, a){
-//     let newArr = []
-//     for (let i = 0; i < arr.length; i++) {
-//         newArr.push(arr[(i - a + arr.length) % arr.length])
-//     }
-//     console.log(newArr)
-// }
+function rotate(arr, a){
+    let newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[(i - a + arr.length) % arr.length])
+    }
+    console.log(newArr)
+}
 
-// rotate([1, 2, 3, 4, 5], 2)
+rotate([1, 2, 3, 4, 5], 5)
 
 
 
