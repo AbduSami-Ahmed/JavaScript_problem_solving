@@ -130,19 +130,28 @@ TestCases - Input:[-2,3,-1,4,0] */
 /*Q7: Return the length of the longest strictly increasing consecutive sequence in the array
 
 TestCases - Input:[1,2,3,4] */  
-// function streak(arr){
-    
-//     let count = 0
 
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i+1] > arr[i] && arr[i] !== arr[i+1]) {
-//             count++
+// function streak(arr){
+//     let maxStreak = 1;
+//     for (let i = 0; i < arr.length-1; i++) {
+//         let current = arr[i];
+//         let streak = 1;
+//         for(let j = i+1;j<arr.length;j++){
+//             if(arr[j] > current){
+//                 streak++;
+//                 current = arr[j];
+//                 maxStreak = Math.max(streak,maxStreak)
+//             }
+//             else{
+//                 break;
+//             }
 //         }
 //     }
-//     console.log(count)
+//     console.log(maxStreak)
 // }
-
-// streak([1,2,2,3,4])
+// let arr = [-3, -2, -1, 0, 1, 2]
+// // streak([1,2,2,3,3,5])
+// streak(arr);
 
 
 
@@ -211,8 +220,21 @@ TestCases - Input:[10,20,4,20] */
 TestCases - Input:[1,2,3,4,5], k=2 */  
 
 // function rotate(arr, k){
+//     k = k%arr.length;
+//     if(k == 0){
+//         console.log(arr);
+//     }
+//     k = arr.length-k;
 //     let newArr = []
-    
+//     let i =0;
+//     for(let j = k;j<arr.length;j++){
+//         newArr[i] = arr[j];
+//         i++;
+//     }
+//     for(let j = 0;j<k;j++){
+//         newArr[i] = arr[j];
+//         i++;
+//   }
 //     console.log(newArr)
 // }
 
@@ -264,7 +286,22 @@ TestCases - Input:[1,2,1,3,2,1]
 
 // function allCount(arr){
 
+//     let obj={}
+
+//     for (let i = 0; i < arr.length; i++) {
+//         value = arr[i]
+//         if (obj[value]) {
+//             obj[value]++
+//         }
+//         else{
+//             obj[value] = 1
+//         }
+//     }
+
+//     console.log(obj)
 // }
+
+// allCount([1,2,1,3,2,1])
 
 
 
@@ -317,7 +354,7 @@ TestCases - Input:[1,2,4,5] */
 
 
 
-/*Q1: Merge 2 sorted arays into one sorted array without using built-in sort 
+/*Q15: Merge 2 sorted arays into one sorted array without using built-in sort 
 
 TestCases - Input: arr1=[1,3,5] arr2=[2,4,6] 
             Output: [1,2,3,4,5,6] */  
